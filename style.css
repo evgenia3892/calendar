@@ -1,0 +1,180 @@
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            color: #404040;
+            padding-top: 50px;
+            padding-left: 100px;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        p {
+            margin: 0;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin: 0;
+        }
+        
+        .container-calendar {
+            display: inline-block;
+            background: #EAEEFF;
+            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            padding: 10px 0;
+        }
+        
+        .container-calendar .container-info {
+            width: 95%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 26px;
+        }
+        
+        .container-calendar .container-info .nav {
+            width: 10%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .container-calendar .container-info .nav .next svg {
+            transform: rotate(180deg);
+        }
+        
+        .container-calendar .container-info .info {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            line-height: 16px;
+            color: #404040;
+            opacity: 0.8;
+            font-weight: 400;
+        }
+        
+        .container-calendar .container-info .info .month-info {
+            font-weight: 700;
+            margin-left: 5px;
+        }
+        
+        #calendar {
+            display: inline-block;
+        }
+        
+        #calendar thead th {
+            padding: 12px 15px;
+            text-align: center;
+            border: none;
+            font-weight: bold;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 16px;
+            opacity: 0.5;
+            text-transform: lowercase;
+        }
+        
+        #calendar tbody td,
+        #calendar tbody th {
+            padding: 12px 15px;
+            background: #FFFFFF;
+            border: 1px solid #EAEEFF;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            color: #404040;
+            cursor: pointer;
+        }
+        
+        #calendar tbody td:hover,
+        #calendar tbody th:hover {
+            border: 1px solid #4E68EF;
+        }
+        
+        #calendar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 25px;
+        }
+        
+        #calendar .active {
+            background: #4E68EF;
+            border: 1px solid #EAEEFF;
+            color: #FFFFFF;
+        }
+        
+        .time {
+            width: 95%;
+            padding-right: 20px;
+            margin: 0 auto;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .time .dial {
+            display: inline-block;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 9px 11px;
+        }
+        
+        .time .dial svg {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+        
+        .time .dial span {
+            margin: 0 9px;
+            font-size: 18px;
+            line-height: 21px;
+        }
+        
+        .time .dial input {
+            border: none;
+            outline: none;
+            width: 25px;
+            font-size: 18px;
+            line-height: 21px;
+        }
+        
+        .time .dial input::placeholder {
+            font-size: 18px;
+            line-height: 21px;
+            color: #404040;
+        }
+        
+        .time a {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.05em;
+            color: #4C64DC;
+        }
